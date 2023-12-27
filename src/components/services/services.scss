@@ -107,11 +107,12 @@
       }
 
       .box {
+        flex: 1;
         padding: 50px;
         border: 0.5px solid gray;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
         @include mobile {
           border: none;
@@ -122,23 +123,10 @@
 
         p {
           @include mobile {
-            display: none;
-          }
-        }
-
-        button {
-          padding: 10px;
-          background-color: orange;
-          border: none;
-          cursor: pointer;
-
-          @include mobile {
-            background-color: transparent;
             border: 1px solid orange;
             border-radius: 5px;
-            color: orange;
-            width: 50%;
-            padding: 5px;
+            width: 60%;
+            padding: 10px;
           }
         }
       }
